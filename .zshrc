@@ -23,6 +23,15 @@ PROMPT='%{$fg[green]%}%1~%{$reset_color%}${vcs_info_msg_0_} %# '
 export GOPATH=/home/aiden/src/gocode
 export PATH=$PATH:$GOPATH/bin
 
+
+if [ -f ~/.zshrc_local ]; then
+    . ~/.zshrc_local
+fi
+
 if [ -f ~/.aliases ]; then
     . ~/.aliases
+fi
+
+if [ -f ~/.local_aliases ]; then
+    . ~/.local_aliases
 fi
