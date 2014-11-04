@@ -10,8 +10,9 @@ autoload -Uz compinit vcs_info colors
 compinit
 colors
 
-zstyle ":vcs_info:*" enable git
+zstyle ":vcs_info:*" enable git hg
 zstyle ':vcs_info:git*' formats ":%{$fg[blue]%}%b%{$reset_color%}"
+zstyle ':vcs_info:hg*' formats ":%{$fg[blue]%}%b%{$reset_color%}"
 precmd () {
     vcs_info
 }
