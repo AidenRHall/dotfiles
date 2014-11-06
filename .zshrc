@@ -32,6 +32,6 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-if [ -f ~/.local_aliases ]; then
-    . ~/.local_aliases
+if [ -f ~/.aliases_local ]; then
+    . ~/.aliases_local
 fi
