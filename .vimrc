@@ -19,6 +19,10 @@ Bundle 'https://github.com/scrooloose/syntastic'
 " turn filetypes back on since we're done loading plugins
 filetype on
 
+" configure plugins
+let g:syntastic_check_on_open=1
+
+
 colorscheme desertEx
 set t_Co=256
 set hlsearch
@@ -33,7 +37,6 @@ noremap <leader>s :update<CR>
 set backupdir=~/.vim_backups
 set directory=~/.vim_backups
 set backup
-set autochdir
 
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
@@ -42,13 +45,6 @@ set ls=2
 set nf=octal,hex,alpha
 
 set backspace=indent,eol,start
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
-
 set history=50
 set ruler
 set showcmd
@@ -72,7 +68,8 @@ nor  <down>   ddp
 nor  <left>   <<
 nor  <right>  >>
 
-" making surroundings sane
+
+" automate surroundings
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
@@ -93,3 +90,31 @@ inoremap <C-k> <Esc>/[({"'\[<]<CR>NN:nohl<CR>a
 
 vnoremap <Leader>s :sort<CR>
 noremap Y y$
+
+
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
