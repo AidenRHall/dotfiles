@@ -15,3 +15,9 @@ setlocal commentstring=//\ %s
 let b:undo_ftplugin = "setl com< cms<"
 
 " vim:ts=4:sw=4:et
+
+" set tab to 8 characters long
+setlocal noexpandtab
+setlocal shiftwidth=8
+setlocal softtabstop=0
+setlocal tabstop=8

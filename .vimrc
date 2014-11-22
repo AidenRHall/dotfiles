@@ -15,6 +15,7 @@ Bundle 'https://github.com/Valloric/YouCompleteMe'
 Bundle 'https://github.com/tpope/vim-fugitive'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
+Bundle 'https://github.com/mattn/emmet-vim'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
