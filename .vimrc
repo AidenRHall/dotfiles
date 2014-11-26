@@ -35,9 +35,14 @@ setglobal fileencoding=utf-8
 
 noremap <leader>s :update<CR>
 
-set backupdir=~/.vim_backups
-set directory=~/.vim_backups
+set backupdir=~/.vim/backups
+set directory=~/.vim/backups
 set backup
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=10000
+set undoreload=10000
 
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
