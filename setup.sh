@@ -21,6 +21,7 @@ do
     fi
 done
 
-mkdir ~/.vim_backups
+mkdir ~/.vim/backups
+mkdir ~/.vim/undodir
 
 echo 'done setting up'

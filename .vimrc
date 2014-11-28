@@ -22,6 +22,7 @@ filetype on
 
 " configure plugins
 let g:syntastic_check_on_open=1
+set tags=tags
 
 
 colorscheme desertEx
@@ -39,8 +40,8 @@ set backupdir=~/.vim/backups
 set directory=~/.vim/backups
 set backup
 
-set undodir=~/.vim/undodir
 set undofile
+set undodir=~/.vim/undodir
 set undolevels=10000
 set undoreload=10000
 
