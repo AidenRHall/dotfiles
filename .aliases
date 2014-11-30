@@ -2,5 +2,3 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lla="ls -la"
 alias cls='printf "\033c"'
-
-alias touchpad-off="synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
