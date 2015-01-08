@@ -80,9 +80,11 @@ nor  <right>  >>
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
-inoremap < <><esc>i
-inoremap " ""<esc>i
-inoremap ' ''<esc>i
+
+inoremap "" ""<esc>i
+inoremap '' ''<esc>i
+inoremap """ """<CR>"""<esc>O
+inoremap ''' '''<CR>'''<esc>O
 
 inoremap () ()
 inoremap {} {}
