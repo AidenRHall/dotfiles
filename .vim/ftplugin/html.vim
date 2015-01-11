@@ -1,1 +1,1 @@
-inoremap < <><esc>i
+inoremap < <><left>

@@ -90,11 +90,13 @@ inoremap () ()
 inoremap {} {}
 inoremap [] []
 
+inoremap <> <><left>
+
 inoremap {<CR> {<CR>}<C-o>O
 inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 
-inoremap <C-j> <C-o>/[)}"'\]>]<CR><C-o>:nohl<CR><right>
+inoremap <C-j> <left><C-o>/[)}"'\]>]<CR><C-o>:nohl<CR><right>
 
 vnoremap <Leader>s :sort<CR>
 noremap Y y$
