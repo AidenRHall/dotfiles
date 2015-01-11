@@ -77,25 +77,24 @@ nor  <right>  >>
 
 
 " automate surroundings
-inoremap { {}<esc>i
-inoremap ( ()<esc>i
-inoremap [ []<esc>i
+inoremap { {}<left>
+inoremap ( ()<left>
+inoremap [ []<left>
 
-inoremap "" ""<esc>i
-inoremap '' ''<esc>i
-inoremap """ """<CR>"""<esc>O
-inoremap ''' '''<CR>'''<esc>O
+inoremap "" ""<left>
+inoremap '' ''<left>
+inoremap """<CR> """<CR>"""<C-o>O
+inoremap '''<CR> '''<CR>'''<C-o>O
 
 inoremap () ()
 inoremap {} {}
 inoremap [] []
 
-inoremap {<CR> {<CR>}<esc>O
-inoremap (<CR> (<CR>)<esc>O
-inoremap [<CR> [<CR>]<esc>O
+inoremap {<CR> {<CR>}<C-o>O
+inoremap (<CR> (<CR>)<C-o>O
+inoremap [<CR> [<CR>]<C-o>O
 
-inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
-inoremap <C-k> <Esc>/[({"'\[<]<CR>NN:nohl<CR>a
+inoremap <C-j> <C-o>/[)}"'\]>]<CR><C-o>:nohl<CR><right>
 
 vnoremap <Leader>s :sort<CR>
 noremap Y y$
