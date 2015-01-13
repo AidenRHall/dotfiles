@@ -65,6 +65,7 @@ setlocal softtabstop=4
 setlocal shiftwidth=4
 
 set colorcolumn=81
+set nu
 
 ino  <up>     <NOP>
 ino  <down>   <NOP>
