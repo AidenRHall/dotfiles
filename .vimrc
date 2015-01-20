@@ -16,6 +16,7 @@ Bundle 'https://github.com/tpope/vim-fugitive'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim'
+Bundle 'https://github.com/hallettj/jslint.vim'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -46,7 +47,7 @@ set undolevels=10000
 set undoreload=10000
 
 " Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 set ls=2
 set nf=octal,hex,alpha
@@ -60,9 +61,9 @@ set incsearch
 set autoindent
 
 set tabpagemax=15
-setlocal expandtab
-setlocal softtabstop=4
-setlocal shiftwidth=4
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 
 set colorcolumn=81
 set nu
