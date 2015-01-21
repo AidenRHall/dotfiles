@@ -17,6 +17,7 @@ Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim'
 Bundle 'https://github.com/hallettj/jslint.vim'
+Bundle 'https://github.com/powerman/vim-plugin-autosess'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -64,6 +65,11 @@ set tabpagemax=15
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
 
 set colorcolumn=81
 set nu
