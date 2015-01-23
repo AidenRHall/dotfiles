@@ -17,7 +17,6 @@ Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim'
 Bundle 'https://github.com/hallettj/jslint.vim'
-Bundle 'https://github.com/powerman/vim-plugin-autosess'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
