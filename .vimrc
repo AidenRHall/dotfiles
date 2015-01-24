@@ -72,6 +72,7 @@ nmap <silent> <A-Right> :wincmd l<CR>
 
 set colorcolumn=81
 set nu
+highlight LineNr ctermfg=DarkGray
 
 ino  <up>     <NOP>
 ino  <down>   <NOP>
