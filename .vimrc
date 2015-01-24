@@ -96,9 +96,9 @@ inoremap [] []
 
 inoremap <> <><left>
 
-inoremap {<CR> {<CR>}<C-o>O
-inoremap (<CR> (<CR>)<C-o>O
-inoremap [<CR> [<CR>]<C-o>O
+inoremap {<CR> {<CR><CR>}<up><BS><CR>
+inoremap (<CR> (<CR><CR>)<up><BS><CR>
+inoremap [<CR> [<CR><CR>]<up><BS><CR>
 
 inoremap <C-j> <left><C-o>/[)}"'\]>]<CR><C-o>:nohl<CR><right>
 
