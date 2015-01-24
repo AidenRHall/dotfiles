@@ -74,10 +74,6 @@ set colorcolumn=81
 set nu
 highlight LineNr ctermfg=DarkGray
 
-ino  <up>     <NOP>
-ino  <down>   <NOP>
-ino  <left>   <NOP>
-ino  <right>  <NOP>
 nor  <up>     ddkP
 nor  <down>   ddp
 nor  <left>   <<
