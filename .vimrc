@@ -85,8 +85,10 @@ inoremap { {}<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 
-inoremap "" ""<left>
-inoremap '' ''<left>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap "" "
+inoremap '' '
 inoremap """<CR> """<CR>"""<C-o>O
 inoremap '''<CR> '''<CR>'''<C-o>O
 
