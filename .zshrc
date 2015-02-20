@@ -26,8 +26,11 @@ precmd () {
     vcs_info
 }
 
+_prompt_and_resched() { sched +1 _prompt_and_resched; zle && zle reset-prompt }
+_prompt_and_resched
+
 setopt prompt_subst
-PROMPT=': %{$fg[green]%}%1~%{$reset_color%}${vcs_info_msg_0_} %# ; '
+PROMPT=': %D{%H:%M:%S} %{$fg[green]%}%1~%{$reset_color%}${vcs_info_msg_0_} %# ; '
 
 export GOPATH=/home/aiden/src/gocode
 export PATH=$PATH:$GOPATH/bin
