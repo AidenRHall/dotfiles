@@ -26,6 +26,8 @@ precmd () {
     vcs_info
 }
 
+# realtime clock, as seen in
+# http://chneukirchen.org/blog/archive/2013/03/10-fresh-zsh-tricks-you-may-not-know.html
 _prompt_and_resched() { sched +1 _prompt_and_resched; zle && zle reset-prompt }
 _prompt_and_resched
 
