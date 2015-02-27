@@ -83,6 +83,8 @@ set shiftwidth=4
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
+nnoremap <C-left> :bp<CR>
+nnoremap <C-right> :bn<CR>
 
 set colorcolumn=81
 set nu
