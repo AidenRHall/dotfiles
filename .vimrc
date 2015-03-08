@@ -83,6 +83,8 @@ set shiftwidth=4
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
+nnoremap <A-PageUp> :tabclose<CR>
+nnoremap <A-PageDown> :tabnew<CR>
 nnoremap <C-left> :bp<CR>
 nnoremap <C-right> :bn<CR>
 
