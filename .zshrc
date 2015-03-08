@@ -10,8 +10,10 @@ unsetopt beep
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^F' history-beginning-search-backward
-bindkey "\^\[\[5D" backward-word
-bindkey "\^\[\[5C" forward-word
+
+# designed to work with xfree 4 keyboard settings
+bindkey "\\E[1;5D" backward-word
+bindkey "\\E[1;5C" forward-word
 
 zstyle :compinstall filename '/home/aiden/.zshrc'
 
