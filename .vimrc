@@ -83,10 +83,14 @@ set shiftwidth=4
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
-nnoremap <A-PageUp> :tabclose<CR>
-nnoremap <A-PageDown> :tabnew<CR>
+nnoremap <A-PageUp> :tabprevious<CR>
+nnoremap <A-PageDown> :tabnext<CR>
+nnoremap <C-PageUp> :tabclose<CR>
+nnoremap <C-PageDown> :tabnew<CR>
 nnoremap <C-left> :bp<CR>
 nnoremap <C-right> :bn<CR>
+
+nnoremap Y y$
 
 set colorcolumn=81
 set nu
@@ -120,10 +124,8 @@ inoremap {<CR> {<CR><CR>}<up><BS><CR>
 inoremap (<CR> (<CR><CR>)<up><BS><CR>
 inoremap [<CR> [<CR><CR>]<up><BS><CR>
 
-inoremap <C-j> <left><C-o>/[)}"'\]>]<CR><C-o>:nohl<CR><right>
-
 vnoremap <Leader>s :sort<CR>
-noremap Y y$
+vnoremap // y/<C-R>:<CR>
 
 
 if !exists('g:airline_symbols')
