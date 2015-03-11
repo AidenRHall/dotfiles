@@ -35,9 +35,6 @@ set statusline+=%*
 let g:syntastic_error_symbol = "✗"                                           
 let g:syntastic_warning_symbol = "⚠"
 
-nnoremap <silent> <A-Up> :lopen<CR>
-nnoremap <silent> <A-Down> :lclose<CR>
-
 "  ctags
 set tags=tags
 
@@ -81,12 +78,19 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
+
+" navigation
+nnoremap <silent> <A-Up> :lopen<CR>
+nnoremap <silent> <A-Down> :lclose<CR>
+
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
+
 nnoremap <A-PageUp> :tabprevious<CR>
 nnoremap <A-PageDown> :tabnext<CR>
-nnoremap <C-PageUp> :tabclose<CR>
-nnoremap <C-PageDown> :tabnew<CR>
+nnoremap <leader>w :tabclose<CR>
+nnoremap <leader>t :tabnew<CR>
+
 nnoremap <C-left> :bp<CR>
 nnoremap <C-right> :bn<CR>
 
