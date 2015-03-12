@@ -10,13 +10,11 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'https://github.com/bling/vim-airline'
 Bundle 'https://github.com/kien/ctrlp.vim'
 Bundle 'https://github.com/Lokaltog/vim-easymotion'
-Bundle 'https://github.com/Valloric/YouCompleteMe'
+Bundle 'https://github.com/ervandew/supertab'
 Bundle 'https://github.com/tpope/vim-fugitive'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim.git'
-Bundle 'https://github.com/xolox/vim-misc.git'
-Bundle 'https://github.com/xolox/vim-easytags'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -132,7 +130,7 @@ inoremap (<CR> (<CR><CR>)<up><BS><CR>
 inoremap [<CR> [<CR><CR>]<up><BS><CR>
 
 vnoremap <leader>s :sort<CR>
-vnoremap // y/<C-R>:<CR>
+vnoremap // y/<C-R>"<CR>
 
 
 if !exists('g:airline_symbols')
