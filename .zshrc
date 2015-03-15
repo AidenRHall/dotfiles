@@ -36,7 +36,7 @@ _prompt_and_resched
 setopt prompt_subst
 PROMPT=': %D{%H:%M:%S} %{$fg[green]%}%1~%{$reset_color%}${vcs_info_msg_0_} %# ; '
 
-export GOPATH=/home/aiden/src/gocode
+export GOPATH=/home/aiden/Src/gocode
 export PATH=$PATH:$GOPATH/bin
 
 

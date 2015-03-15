@@ -129,6 +129,8 @@ inoremap {<CR> {<CR><CR>}<up><BS><CR>
 inoremap (<CR> (<CR><CR>)<up><BS><CR>
 inoremap [<CR> [<CR><CR>]<up><BS><CR>
 
+inoremap <C-j> <esc>O
+
 vnoremap <leader>s :sort<CR>
 vnoremap // y/<C-R>"<CR>
 
