@@ -123,8 +123,6 @@ inoremap {} {}
 inoremap [] []
 
 inoremap <> <><left>
-inoremap <?= <?=<space>?><left><left><left>
-inoremap <? <?<space>?><left><left><left>
 
 inoremap {<CR> {<CR><CR>}<up><BS><CR>
 inoremap (<CR> (<CR><CR>)<up><BS><CR>
