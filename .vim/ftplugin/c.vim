@@ -5,4 +5,4 @@ setlocal softtabstop=0
 setlocal tabstop=8
 
 inoremap <C-j> <esc>A;<CR>
-inoremap #include #include<><left>
+inoremap ,,i #include<><left>
