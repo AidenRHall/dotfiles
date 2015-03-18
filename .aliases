@@ -4,3 +4,5 @@ alias lla="ls -la"
 
 alias touchpad-toggle="synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
 alias tt="synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
+
+alias dotfiles="cd ~/.dotfiles"
