@@ -6,7 +6,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-Bundle 'gmarik/Vundle.vim'
+Bundle 'https://github.com/gmarik/Vundle.vim'
 Bundle 'https://github.com/bling/vim-airline'
 Bundle 'https://github.com/kien/ctrlp.vim'
 Bundle 'https://github.com/Lokaltog/vim-easymotion'
@@ -16,6 +16,7 @@ Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim.git'
 Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/SirVer/ultisnips.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -42,6 +43,10 @@ set tags=tags
 colorscheme desertEx
 set t_Co=256
 set hlsearch
+
+" make insert mode curor appear thin -- konsole only!
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 syntax on
 filetype plugin indent on
