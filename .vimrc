@@ -41,6 +41,11 @@ let g:syntastic_warning_symbol = "⚠"
 "  ctags
 set tags=tags
 
+" snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+
 
 colorscheme solarized
 set background=dark
