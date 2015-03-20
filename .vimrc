@@ -109,6 +109,9 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <C-up> :bp<CR>
 nnoremap <C-down> :bn<CR>
 
+nnoremap <leader>n :tn<CR>
+nnoremap <leader>p :tp<CR>
+
 nnoremap Y y$
 
 set colorcolumn=81
