@@ -106,8 +106,8 @@ nnoremap <A-PageDown> :tabnext<CR>
 nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>t :tabnew<CR>
 
-nnoremap <C-left> :bp<CR>
-nnoremap <C-right> :bn<CR>
+nnoremap <C-up> :bp<CR>
+nnoremap <C-down> :bn<CR>
 
 nnoremap Y y$
 
