@@ -87,7 +87,7 @@ plugins=(git mercurial repo colored-man colorize safe-paste web-search go)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$/home/aiden/Src/chromium/depot_tools
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
