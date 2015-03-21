@@ -47,6 +47,34 @@ let g:UltiSnipsExpandTrigger="<C-n>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
+" airline
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
 
 colorscheme solarized
 set background=dark
@@ -90,14 +118,16 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
+set scrolloff=5
+
 
 let mapleader=","
 noremap <leader>s :update<CR>
 
 
 " navigation
-nnoremap <silent> <A-Up> :lopen<CR>
-nnoremap <silent> <A-Down> :lclose<CR>
+nnoremap <silent> <C-Up> :lopen<CR>
+nnoremap <silent> <C-Down> :lclose<CR>
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
@@ -107,8 +137,8 @@ nnoremap <A-PageDown> :tabnext<CR>
 nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>t :tabnew<CR>
 
-nnoremap <C-up> :bp<CR>
-nnoremap <C-down> :bn<CR>
+nnoremap <A-Up> :bp<CR>
+nnoremap <A-Down> :bn<CR>
 
 nnoremap <leader>n :tn<CR>
 nnoremap <leader>p :tp<CR>
@@ -119,19 +149,19 @@ set colorcolumn=81
 set nu
 highlight LineNr ctermfg=DarkGray
 
-nor  <up>     ddkP
-nor  <down>   ddp
-nor  <left>   <<
-nor  <right>  >>
+nor  <Up>     ddkP
+nor  <Down>   ddp
+nor  <Left>   <<
+nor  <Right>  >>
 
 
 " automate surroundings
-inoremap { {}<left>
-inoremap ( ()<left>
-inoremap [ []<left>
+inoremap { {}<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
 
-inoremap " ""<left>
-inoremap ' ''<left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
 inoremap "" "
 inoremap '' '
 
@@ -139,41 +169,13 @@ inoremap () ()
 inoremap {} {}
 inoremap [] []
 
-inoremap <> <><left>
+inoremap <> <><Left>
 
-inoremap {<CR> {<CR><CR>}<up><BS><CR>
-inoremap (<CR> (<CR><CR>)<up><BS><CR>
-inoremap [<CR> [<CR><CR>]<up><BS><CR>
+inoremap {<CR> {<CR><CR>}<Up><BS><CR>
+inoremap (<CR> (<CR><CR>)<Up><BS><CR>
+inoremap [<CR> [<CR><CR>]<Up><BS><CR>
 
 inoremap <C-j> <esc>O
 
 vnoremap <leader>s :sort<CR>
 vnoremap // y/<C-R>"<CR>
-
-
-if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-" powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
