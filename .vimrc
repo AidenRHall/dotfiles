@@ -17,7 +17,6 @@ Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim.git'
 Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/SirVer/ultisnips.git'
-Bundle 'https://github.com/honza/vim-snippets.git'
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 
 " turn filetypes back on since we're done loading plugins
