@@ -129,8 +129,8 @@ noremap <leader>s :update<CR>
 
 
 " navigation
-nnoremap <silent> <C-Up> :lopen<CR>
-nnoremap <silent> <C-Down> :lclose<CR>
+nnoremap <silent> <C-Up> :lprevious<CR>
+nnoremap <silent> <C-Down> :lnext<CR>
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>

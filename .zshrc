@@ -86,7 +86,7 @@ ZSH_THEME="blinks"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mercurial repo colored-man colorize safe-paste web-search go)
+plugins=(git mercurial repo colored-man colorize safe-paste extract web-search go)
 
 # User configuration
 
