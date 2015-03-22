@@ -99,9 +99,6 @@ set undodir=~/.vim/undodir
 set undolevels=10000
 set undoreload=10000
 
-" Remove any trailing whitespace that is in the file
-" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
 set ls=2
 set nf=octal,hex,alpha
 
@@ -124,6 +121,8 @@ set colorcolumn=81
 set nu
 highlight LineNr ctermfg=DarkGray
 
+" Remove trailing whitespace
+" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$/\1/ge | endif
 
 let mapleader=","
 noremap <leader>s :update<CR>
@@ -155,24 +154,22 @@ nor  <Right>  >>
 nnoremap Y y$
 
 " automate surroundings
-inoremap { {}<Left>
-inoremap ( ()<Left>
-inoremap [ []<Left>
-
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap "" "
-inoremap '' '
+inoremap { {}<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap ( ()<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap [ []<C-r>=UltiSnips#ExpandSnippet()<CR>
 
 inoremap () ()
 inoremap {} {}
 inoremap [] []
 
-inoremap <> <><Left>
+inoremap {<CR> {<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap (<CR> (<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap [<CR> [<C-r>=UltiSnips#ExpandSnippet()<CR>
 
-inoremap {<CR> {<CR><CR>}<Up><BS><CR>
-inoremap (<CR> (<CR><CR>)<Up><BS><CR>
-inoremap [<CR> [<CR><CR>]<Up><BS><CR>
+inoremap <> <><C-r>=UltiSnips#ExpandSnippet()<CR>
+
+inoremap "" "<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap '' '<C-r>=UltiSnips#ExpandSnippet()<CR>
 
 inoremap <C-j> <esc>O
 inoremap <C-e> <esc>A;<esc>
