@@ -154,6 +154,26 @@ nor  <Right>  >>
 
 nnoremap Y y$
 
+" automate surroundings
+inoremap { {}<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap "" "
+inoremap '' '
+
+inoremap () ()
+inoremap {} {}
+inoremap [] []
+
+inoremap <> <><Left>
+
+inoremap {<CR> {<CR><CR>}<Up><BS><CR>
+inoremap (<CR> (<CR><CR>)<Up><BS><CR>
+inoremap [<CR> [<CR><CR>]<Up><BS><CR>
+
 inoremap <C-j> <esc>O
 inoremap <C-e> <esc>A;<esc>
 
