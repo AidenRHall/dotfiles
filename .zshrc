@@ -36,6 +36,9 @@ if [ -f ~/.aliases_local ]; then
     . ~/.aliases_local
 fi
 
+# must insert this to make tab completion not destroy spacing!
+export LC_ALL="en_US.UTF-8"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
