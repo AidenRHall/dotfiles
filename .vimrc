@@ -168,8 +168,10 @@ inoremap [<CR> [<C-r>=UltiSnips#ExpandSnippet()<CR>
 
 inoremap <> <><C-r>=UltiSnips#ExpandSnippet()<CR>
 
-inoremap "" "<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap '' '<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap " "<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap ' '<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap "" "
+inoremap '' '
 
 inoremap <C-j> <esc>O
 inoremap <C-e> <esc>A;<esc>
