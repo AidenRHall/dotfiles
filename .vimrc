@@ -154,22 +154,22 @@ nor  <Right>  >>
 nnoremap Y y$
 
 " automate surroundings
-inoremap { {}<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap ( ()<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap [ []<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap { {}abc<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap ( ()abc<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap [ []abc<C-r>=UltiSnips#ExpandSnippet()<CR>
 
 inoremap () ()
 inoremap {} {}
 inoremap [] []
 
-inoremap {<CR> {<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap (<CR> (<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap [<CR> [<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap {<CR> {abc<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap (<CR> (abc<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap [<CR> [abc<C-r>=UltiSnips#ExpandSnippet()<CR>
 
-inoremap <> <><C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap <> <>abc<C-r>=UltiSnips#ExpandSnippet()<CR>
 
-inoremap " "<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap ' '<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap " "abc<C-r>=UltiSnips#ExpandSnippet()<CR>
+inoremap ' 'abc<C-r>=UltiSnips#ExpandSnippet()<CR>
 inoremap "" "
 inoremap '' '
 
