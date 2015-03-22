@@ -120,6 +120,10 @@ set shiftwidth=4
 
 set scrolloff=5
 
+set colorcolumn=81
+set nu
+highlight LineNr ctermfg=DarkGray
+
 
 let mapleader=","
 noremap <leader>s :update<CR>
@@ -140,20 +144,15 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <A-Up> :bp<CR>
 nnoremap <A-Down> :bn<CR>
 
-nnoremap <leader>n :tn<CR>
-nnoremap <leader>p :tp<CR>
-
-nnoremap Y y$
-
-set colorcolumn=81
-set nu
-highlight LineNr ctermfg=DarkGray
+nnoremap <A-PageDown> :tn<CR>
+nnoremap <A-PageUp> :tp<CR>
 
 nor  <Up>     ddkP
 nor  <Down>   ddp
 nor  <Left>   <<
 nor  <Right>  >>
 
+nnoremap Y y$
 
 " automate surroundings
 inoremap { {}<Left>
