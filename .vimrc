@@ -174,7 +174,7 @@ inoremap ' abc'abc<C-r>=UltiSnips#ExpandSnippet()<CR>
 inoremap "" "
 inoremap '' '
 
-inoremap <C-j> <esc>O
+inoremap <C-j> <esc>o
 inoremap <C-e> <esc>A;<esc>
 
 vnoremap <leader>s :sort<CR>
