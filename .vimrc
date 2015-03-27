@@ -148,13 +148,15 @@ nnoremap <A-Down> :bn<CR>
 nnoremap <A-PageDown> :tn<CR>
 nnoremap <A-PageUp> :tp<CR>
 
-map <C-w><C-]> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+nnoremap <C-w><C-]> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+nnoremap <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
-nor  <Up>     ddkP
-nor  <Down>   ddp
-nor  <Left>   <<
-nor  <Right>  >>
+nnoremap ga <Plug>(EasyAlign)
+
+nnoremap  <Up>     ddkP
+nnoremap  <Down>   ddp
+nnoremap  <Left>   <<
+nnoremap  <Right>  >>
 
 nnoremap Y y$
 
@@ -183,3 +185,4 @@ inoremap <C-e> <esc>A;<esc>
 
 vnoremap <leader>s :sort<CR>
 vnoremap // y/<C-R>"<CR>
+vnoremap <Enter> <Plug>(EasyAlign)
