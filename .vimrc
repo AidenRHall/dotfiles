@@ -147,6 +147,9 @@ nnoremap <A-Down> :bn<CR>
 nnoremap <A-PageDown> :tn<CR>
 nnoremap <A-PageUp> :tp<CR>
 
+map <C-w><C-]> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 nor  <Up>     ddkP
 nor  <Down>   ddp
 nor  <Left>   <<
