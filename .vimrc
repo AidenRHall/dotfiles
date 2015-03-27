@@ -21,6 +21,7 @@ Bundle 'https://github.com/AidenRHall/vim-snippets.git'
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 Bundle 'https://github.com/tmhedberg/matchit.git'
 Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
+Bundle 'https://github.com/junegunn/vim-easy-align.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
