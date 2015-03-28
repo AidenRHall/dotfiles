@@ -87,6 +87,7 @@ function! NumberToggle()
   endif
 endfunc
 
+
 colorscheme solarized
 set background=dark
 set t_Co=256
