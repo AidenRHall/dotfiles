@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
+Bundle 'https://github.com/joequery/Stupid-EasyMotion.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
@@ -76,6 +76,16 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+
+" functions
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
 
 
 colorscheme solarized
@@ -148,16 +158,16 @@ nnoremap <A-Down> :bn<CR>
 nnoremap <A-PageDown> :tn<CR>
 nnoremap <A-PageUp> :tp<CR>
 
-nnoremap <C-w><C-]> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-nnoremap <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-nmap ga <Plug>(EasyAlign)
-
 nnoremap  <Up>     ddkP
 nnoremap  <Down>   ddp
 nnoremap  <Left>   <<
 nnoremap  <Right>  >>
 
+nnoremap <C-w><C-]> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+nnoremap <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+nnoremap <C-l> :call NumberToggle()<cr>
+nmap ga <Plug>(EasyAlign)
 nnoremap Y y$
 
 " automate surroundings
