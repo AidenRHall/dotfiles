@@ -193,6 +193,8 @@ inoremap '' '
 inoremap <C-j> <esc>o
 inoremap <C-e> <esc>A;<esc>
 
+inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
+
 vnoremap <leader>s :sort<CR>
 vnoremap // y/<C-R>"<CR>
 vmap <Enter> <Plug>(EasyAlign)
