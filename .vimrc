@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
