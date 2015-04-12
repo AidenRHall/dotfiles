@@ -16,7 +16,7 @@ RPROMPT='[%*]'
 ZSH_THEME_VCS_PROMPT_PREFIX="%{$fg_bold[blue]%}[%{$fg_no_bold[white]%}%B"
 ZSH_THEME_VCS_PROMPT_SUFFIX="%b%{$fg_bold[blue]%}]%{$reset_color%} "
 ZSH_THEME_VCS_PROMPT_CLEAN=""
-ZSH_THEME_VCS_PROMPT_DIRTY="%{$fg_bold[red]%}✗"
+ZSH_THEME_VCS_PROMPT_DIRTY="%b%{$fg[yellow]%} ⚡"
 
 # mercurial theming
 ZSH_THEME_HG_PROMPT_PREFIX=$ZSH_THEME_VCS_PROMPT_PREFIX
