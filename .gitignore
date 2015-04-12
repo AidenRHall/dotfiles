@@ -1,3 +1,4 @@
 .vim/undodir
 .vim/backups
 .vim/bundle/
+.vim/.netrwhist
