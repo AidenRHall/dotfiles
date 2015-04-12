@@ -1,19 +1,35 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n@%m%b%{$reset_color%} :: %{$fg[blue]%}%B%c%b%{$reset_color%} $(hg_prompt_info)$(git_prompt_info)%(!.#.») '
+_fishy_collapsed_wd() {
+  echo $(pwd | perl -pe "
+   BEGIN {
+      binmode STDIN,  ':encoding(UTF-8)';
+      binmode STDOUT, ':encoding(UTF-8)';
+   }; s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g
+")
+} 
+
+PROMPT='%{$fg[$NCOLOR]%}%B%n@%m%b%{$reset_color%} $(_fishy_collapsed_wd)%{$reset_color%} $(hg_prompt_info)$(git_prompt_info)%(!.#.») '
 RPROMPT='[%*]'
 
-# mercurial theming
-ZSH_THEME_HG_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
-ZSH_THEME_HG_PROMPT_SUFFIX="%b%{$fg_bold[blue]%})%{$reset_color%} "
-ZSH_THEME_HG_PROMPT_CLEAN=""
-ZSH_THEME_HG_PROMPT_DIRTY="%{$fg_bold[red]%}✗"
+# universal vcs prompt info
+ZSH_THEME_VCS_PROMPT_PREFIX="%{$fg_bold[blue]%}[%{$fg_no_bold[white]%}%B"
+ZSH_THEME_VCS_PROMPT_SUFFIX="%b%{$fg_bold[blue]%}]%{$reset_color%} "
+ZSH_THEME_VCS_PROMPT_CLEAN=""
+ZSH_THEME_VCS_PROMPT_DIRTY="%{$fg_bold[red]%}✗"
 
-# git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[blue]%})%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}✗"
+# mercurial theming
+ZSH_THEME_HG_PROMPT_PREFIX=$ZSH_THEME_VCS_PROMPT_PREFIX
+ZSH_THEME_HG_PROMPT_SUFFIX=$ZSH_THEME_VCS_PROMPT_SUFFIX
+ZSH_THEME_HG_PROMPT_CLEAN=$ZSH_THEME_VCS_PROMPT_CLEAN
+ZSH_THEME_HG_PROMPT_DIRTY=$ZSH_THEME_VCS_PROMPT_DIRTY
+
+
+# mercurial theming
+ZSH_THEME_GIT_PROMPT_PREFIX=$ZSH_THEME_VCS_PROMPT_PREFIX
+ZSH_THEME_GIT_PROMPT_SUFFIX=$ZSH_THEME_VCS_PROMPT_SUFFIX
+ZSH_THEME_GIT_PROMPT_CLEAN=$ZSH_THEME_VCS_PROMPT_CLEAN
+ZSH_THEME_GIT_PROMPT_DIRTY=$ZSH_THEME_VCS_PROMPT_DIRTY
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
