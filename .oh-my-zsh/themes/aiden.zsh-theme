@@ -1,6 +1,6 @@
-if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
+if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="blue"; fi
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n@%m%b%{$reset_color%} %c%{$reset_color%} $(hg_prompt_info)$(git_prompt_info)%(!.#.») '
+PROMPT='%{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%} %{$fg[green]%}%c%{$reset_color%} $(hg_prompt_info)$(git_prompt_info)%(!.#.») '
 RPROMPT='[%*]'
 
 # universal vcs prompt info
