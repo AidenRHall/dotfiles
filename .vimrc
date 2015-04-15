@@ -169,6 +169,7 @@ nnoremap <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 nnoremap <C-l> :call NumberToggle()<cr>
 nmap ga <Plug>(EasyAlign)
 nnoremap Y y$
+nnoremap g] :CrtlPTag<CR>
 
 " automate surroundings
 inoremap { abc{}abc<C-r>=UltiSnips#ExpandSnippet()<CR>
