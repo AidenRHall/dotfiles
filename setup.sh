@@ -11,9 +11,9 @@ declare -a FILES=('.vimrc'
 
 for FILE in "${FILES[@]}"
 do
-    if [ -f $HOME/.dotfiles/$FILE ]; then
+    if [ -f $HOME/$FILE -o -d $HOME/$FILE ]; then
         if [ -f $HOME/$FILE -o -d $HOME/$FILE ]; then
-            rm $HOME/$FILE
+            rm -r $HOME/$FILE
         fi
         ln -s $HOME/.dotfiles/$FILE $HOME/$FILE
         echo "$FILE: symlinked"
