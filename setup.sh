@@ -7,7 +7,8 @@ declare -a FILES=('.vimrc'
                   '.vim'
                   '.zshrc'
                   '.oh-my-zsh'
-                  '.aliases')
+                  '.aliases'
+                  '.ctags')
 
 for FILE in "${FILES[@]}"
 do
