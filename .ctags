@@ -2,8 +2,9 @@
 --tag-relative=yes
 --exclude=.git
 --exclude=.hg
-
 --verbose=yes
+--extra=f
+
 --langdef=scss
 --langmap=scss:.scss
 --regex-scss=/^[ \t]*([^\t {][^{]{1,100})(\t| )*\{/| \1/d,definition/
