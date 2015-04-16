@@ -2,7 +2,6 @@
 --tag-relative=yes
 --exclude=.git
 --exclude=.hg
---verbose=yes
 --extra=f
 
 --langdef=scss
