@@ -12,7 +12,7 @@ declare -a FILES=('.vimrc'
 
 for FILE in "${FILES[@]}"
 do
-    if [ -f $HOME/$FILE -o -d $HOME/$FILE ]; then
+    if [ -f $HOME/.dotfiles/$FILE -o -d $HOME/.dotfiles/$FILE ]; then
         if [ -f $HOME/$FILE -o -d $HOME/$FILE ]; then
             rm -r $HOME/$FILE
         fi
