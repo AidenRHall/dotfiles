@@ -45,6 +45,9 @@ let g:syntastic_warning_symbol = "⚠"
 "  ctags
 set tags=tags
 
+" ctrlp
+let g:ctrlp_tjump_only_silent = 1
+
 " snippets
 let g:UltiSnipsExpandTrigger="<C-n>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
