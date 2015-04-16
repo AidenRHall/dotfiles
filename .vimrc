@@ -10,6 +10,7 @@ Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/ervandew/supertab.git'
+Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/scrooloose/syntastic'
@@ -169,7 +170,7 @@ nnoremap <C-w>] :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 nnoremap <C-l> :call NumberToggle()<cr>
 nmap ga <Plug>(EasyAlign)
 nnoremap Y y$
-nnoremap g] :CrtlPTag<CR>
+nnoremap g] :CtrlPtjump<CR>
 
 " automate surroundings
 inoremap { abc{}abc<C-r>=UltiSnips#ExpandSnippet()<CR>
@@ -196,6 +197,7 @@ inoremap <C-e> <esc>A;<esc>
 
 inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
 
+nnoremap g] :CtrlPtjumpVisual<CR>
 vnoremap <leader>s :sort<CR>
 vnoremap // y/<C-R>"<CR>
 vmap <Enter> <Plug>(EasyAlign)
