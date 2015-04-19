@@ -195,7 +195,8 @@ inoremap ' abc'xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
 inoremap "" "
 inoremap '' '
 
-inoremap <C-j> <esc>o
+inoremap <A-j> <esc>A,<CR>
+inoremap <C-j> <esc>A<CR>
 inoremap <C-e> <esc>A;<esc>
 
 inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
