@@ -142,7 +142,7 @@ highlight LineNr ctermfg=DarkGray
 " autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$/\1/ge | endif
 
 let mapleader=","
-noremap <leader>s :update<CR>
+noremap <C-S> :update<CR>
 
 
 " navigation
