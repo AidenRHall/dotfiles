@@ -102,6 +102,7 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 syntax on
+au BufNewFile,BufRead *.ctp set filetype=php
 filetype plugin indent on
 set encoding=utf-8
 setglobal fileencoding=utf-8
@@ -141,7 +142,9 @@ highlight LineNr ctermfg=DarkGray
 " autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$/\1/ge | endif
 
 let mapleader=","
-noremap <leader>s :update<CR>
+
+nnoremap <C-S> :update<CR>
+inoremap <C-S> <esc>:update<CR>a
 
 
 " navigation

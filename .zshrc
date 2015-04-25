@@ -5,6 +5,7 @@ setopt HIST_FIND_NO_DUPS
 setopt appendhistory extendedglob
 
 unsetopt beep
+stty -ixon
 
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward
