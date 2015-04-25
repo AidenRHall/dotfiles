@@ -23,6 +23,7 @@ Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 Bundle 'https://github.com/tmhedberg/matchit.git'
 Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
 Bundle 'https://github.com/junegunn/vim-easy-align.git'
+Bundle 'https://github.com/kana/vim-smartinput.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -49,8 +50,8 @@ set tags=tags
 let g:ctrlp_tjump_only_silent = 1
 
 " snippets
-let g:UltiSnipsExpandTrigger="<C-t>"
-let g:UltiSnipsJumpForwardTrigger="<C-t>"
+let g:UltiSnipsExpandTrigger="<C-i>"
+let g:UltiSnipsJumpForwardTrigger="<A-i>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " airline
@@ -177,26 +178,6 @@ nnoremap <C-l> :call NumberToggle()<cr>
 nmap ga <Plug>(EasyAlign)
 nnoremap Y y$
 nnoremap g] :CtrlPtjump<CR>
-
-" automate surroundings
-inoremap { abc{}xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap ( abc()xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap [ abc[]xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-
-inoremap () ()
-inoremap {} {}
-inoremap [] []
-
-inoremap {<CR> abc{xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap (<CR> abc(xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap [<CR> abc[xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-
-inoremap <> abc<>xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-
-inoremap " abc"xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap ' abc'xyz<C-r>=UltiSnips#ExpandSnippet()<CR>
-inoremap "" "
-inoremap '' '
 
 inoremap <A-j> <esc>A,<CR>
 inoremap <C-j> <esc>A<CR>
