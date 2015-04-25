@@ -29,6 +29,7 @@ mkdir $HOME/.vim/undodir
 mkdir $HOME/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim .vim/bundle/Vundle.vim
 vim +BundleInstall +qall
+bash .vim/bundle/YouCompleteMe/install.sh
 
 git clone https://github.com/powerline/fonts.git
 bash fonts/install.sh

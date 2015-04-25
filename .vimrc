@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/ervandew/supertab.git'
+Bundle 'https://github.com/Valloric/YouCompleteMe.git'
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
@@ -49,8 +49,8 @@ set tags=tags
 let g:ctrlp_tjump_only_silent = 1
 
 " snippets
-let g:UltiSnipsExpandTrigger="<C-n>"
-let g:UltiSnipsJumpForwardTrigger="<C-n>"
+let g:UltiSnipsExpandTrigger="<C-t>"
+let g:UltiSnipsJumpForwardTrigger="<C-t>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " airline
@@ -143,8 +143,8 @@ highlight LineNr ctermfg=DarkGray
 
 let mapleader=","
 
-nnoremap <C-S> :update<CR>
-inoremap <C-S> <esc>:update<CR>a
+nnoremap <C-s> :update<CR>
+inoremap <C-s> <esc>:update<CR>a
 
 
 " navigation
@@ -206,5 +206,5 @@ inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
 
 nnoremap g] :CtrlPtjumpVisual<CR>
 vnoremap <leader>s :sort<CR>
-vnoremap // y/<C-R>"<CR>
+vnoremap // y/<C-r>"<CR>
 vmap <Enter> <Plug>(EasyAlign)
