@@ -11,6 +11,8 @@ if [ $? -eq 0 ]; then
         exit 1
     fi
 
+    bash .vim/bundle/YouCompleteMe/install.sh
+
 else
     echo 'update: git pull failed! not attempting vim plugin update'
     exit 1
