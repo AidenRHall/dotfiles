@@ -8,7 +8,7 @@ call vundle#rc()
 
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 
-Bundle 'https://github.com/Valloric/YouCompleteMe.git'
+Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/SirVer/ultisnips.git'
 Bundle 'https://github.com/AidenRHall/vim-snippets.git'
