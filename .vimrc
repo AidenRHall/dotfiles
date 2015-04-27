@@ -56,8 +56,8 @@ set tags=tags
 let g:ctrlp_tjump_only_silent = 1
 
 " snippets
-let g:UltiSnipsExpandTrigger="<C-i>"
-let g:UltiSnipsJumpForwardTrigger="<A-i>"
+let g:UltiSnipsExpandTrigger="<C-n>"
+let g:UltiSnipsJumpForwardTrigger="<A-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " airline
