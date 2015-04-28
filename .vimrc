@@ -57,7 +57,7 @@ let g:ctrlp_tjump_only_silent = 1
 
 " snippets
 let g:UltiSnipsExpandTrigger="<C-n>"
-let g:UltiSnipsJumpForwardTrigger="<A-n>"
+let g:UltiSnipsJumpForwardTrigger="<C-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " airline
