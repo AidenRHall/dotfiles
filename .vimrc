@@ -145,7 +145,7 @@ highlight LineNr ctermfg=DarkGray
 let mapleader=","
 
 nnoremap <C-s> :update<CR>
-inoremap <C-s> <esc>:update<CR>a
+inoremap <C-s> <esc>:update<CR>
 
 
 " navigation
