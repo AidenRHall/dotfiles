@@ -7,29 +7,23 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
-
 Bundle 'https://github.com/ervandew/supertab.git'
-Bundle 'https://github.com/scrooloose/syntastic'
-Bundle 'https://github.com/SirVer/ultisnips.git'
-Bundle 'https://github.com/AidenRHall/vim-snippets.git'
-
+Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
-
-Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
-Bundle 'https://github.com/tmhedberg/matchit.git'
-Bundle 'https://github.com/kana/vim-smartinput.git'
-
-Bundle 'https://github.com/bling/vim-airline.git'
-Bundle 'https://github.com/altercation/vim-colors-solarized.git'
-
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/airblade/vim-gitgutter.git'
-Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
-
-Bundle 'https://github.com/tpope/vim-surround.git'
-Bundle 'https://github.com/junegunn/vim-easy-align.git'
+Bundle 'https://github.com/scrooloose/syntastic'
 Bundle 'https://github.com/mattn/emmet-vim.git'
+Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
+Bundle 'https://github.com/SirVer/ultisnips.git'
+Bundle 'https://github.com/AidenRHall/vim-snippets.git'
+Bundle 'https://github.com/altercation/vim-colors-solarized.git'
+Bundle 'https://github.com/tmhedberg/matchit.git'
+Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
+Bundle 'https://github.com/junegunn/vim-easy-align.git'
+Bundle 'https://github.com/kana/vim-smartinput.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
