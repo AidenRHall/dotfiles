@@ -28,6 +28,7 @@ Bundle 'https://github.com/tpope/vim-commentary.git'
 Bundle 'https://github.com/tpope/vim-rsi.git'
 Bundle 'https://github.com/tpope/vim-sleuth.git'
 Bundle 'https://github.com/tpope/vim-abolish.git'
+Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
