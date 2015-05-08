@@ -7,7 +7,7 @@ fi
 echo 'update: git pulled'
 
 
-vim +BundleUpdate +qall
+vim +BundleUpdate +BundleClean +qall
 
 if [ $? -ne 0 ]; then
     echo 'update: vim plugins failed to update'
