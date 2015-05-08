@@ -27,6 +27,7 @@ Bundle 'https://github.com/kana/vim-smartinput.git'
 Bundle 'https://github.com/tpope/vim-commentary.git'
 Bundle 'https://github.com/tpope/vim-rsi.git'
 Bundle 'https://github.com/tpope/vim-sleuth.git'
+Bundle 'https://github.com/tpope/vim-abolish.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
