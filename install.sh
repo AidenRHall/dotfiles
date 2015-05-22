@@ -9,6 +9,7 @@ declare -a FILES=('.vimrc'
                   '.oh-my-zsh'
                   '.zsh_custom'
                   '.aliases'
+                  '.tmux.conf'
                   '.ctags')
 
 for FILE in "${FILES[@]}"
