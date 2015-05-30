@@ -184,7 +184,7 @@ nnoremap Y y$
 nnoremap g] :CtrlPtjump<CR>
 
 inoremap <C-d> <esc>A<CR>
-inoremap <C-j> <esc>A<CR>
+inoremap <C-j> <esc>A;<CR>
 inoremap <C-e> <esc>A;<esc>
 
 inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
