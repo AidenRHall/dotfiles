@@ -25,9 +25,9 @@ Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
 Bundle 'https://github.com/junegunn/vim-easy-align.git'
 Bundle 'https://github.com/kana/vim-smartinput.git'
 Bundle 'https://github.com/tpope/vim-commentary.git'
-Bundle 'https://github.com/tpope/vim-sleuth.git'
 Bundle 'https://github.com/tpope/vim-abolish.git'
 Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
+Bundle 'https://github.com/fatih/vim-go.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
