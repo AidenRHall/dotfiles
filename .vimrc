@@ -183,7 +183,7 @@ nmap ga <Plug>(EasyAlign)
 nnoremap Y y$
 nnoremap g] :CtrlPtjump<CR>
 
-inoremap <A-j> <esc>A,<CR>
+inoremap <C-d> <esc>A<CR>
 inoremap <C-j> <esc>A<CR>
 inoremap <C-e> <esc>A;<esc>
 
