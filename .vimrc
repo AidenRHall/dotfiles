@@ -28,6 +28,8 @@ Bundle 'https://github.com/tpope/vim-commentary.git'
 Bundle 'https://github.com/tpope/vim-abolish.git'
 Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
+Bundle 'https://github.com/xolox/vim-misc.git'
+Bundle 'https://github.com/xolox/vim-easytags.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -60,6 +62,10 @@ nmap <space> <Plug>(easymotion-prefix)
 let g:UltiSnipsExpandTrigger="<C-n>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
+
+" easytags
+" !Most Important Option!
+let g:easytags_async = 1
 
 " airline
 if !exists('g:airline_symbols')
