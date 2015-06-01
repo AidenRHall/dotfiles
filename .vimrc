@@ -31,6 +31,7 @@ Bundle 'https://github.com/fatih/vim-go.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
 Bundle 'https://github.com/xolox/vim-easytags.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
+Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
