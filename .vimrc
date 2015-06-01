@@ -174,14 +174,13 @@ nnoremap <silent> <C-Down> :lnext<CR>
 
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
 
 nnoremap <A-PageUp> :tabprevious<CR>
 nnoremap <A-PageDown> :tabnext<CR>
 nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>t :tabnew<CR>
-
-nnoremap <A-Up> :bp<CR>
-nnoremap <A-Down> :bn<CR>
 
 nnoremap <A-PageDown> :tn<CR>
 nnoremap <A-PageUp> :tp<CR>
