@@ -61,6 +61,8 @@ let g:ctrlp_tjump_only_silent = 1
 
 " easymotion
 nmap <space> <Plug>(easymotion-prefix)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 
 " snippets
 let g:UltiSnipsExpandTrigger="<C-n>"
