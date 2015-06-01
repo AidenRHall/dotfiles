@@ -30,6 +30,7 @@ Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
 Bundle 'https://github.com/xolox/vim-easytags.git'
+Bundle 'https://github.com/majutsushi/tagbar.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
@@ -46,11 +47,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_error_symbol = "✗"                                           
+let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
 "  ctags
 set tags=tags
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " ctrlp
 let g:ctrlp_tjump_only_silent = 1
