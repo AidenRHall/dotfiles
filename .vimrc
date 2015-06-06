@@ -62,7 +62,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:ctrlp_tjump_only_silent = 1
 
 " easymotion
-nmap <space> <Plug>(easymotion-prefix)
+nmap , <Plug>(easymotion-prefix)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
@@ -163,7 +163,7 @@ highlight LineNr ctermfg=DarkGray
 " Remove trailing whitespace
 " autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$/\1/ge | endif
 
-let mapleader=","
+let mapleader=" "
 
 nnoremap <C-s> :update<CR>
 inoremap <C-s> <esc>:update<CR>
