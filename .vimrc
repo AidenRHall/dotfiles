@@ -61,7 +61,6 @@ nmap <F8> :TagbarToggle<CR>
 
 " ctrlp
 let g:ctrlp_tjump_only_silent = 1
-nnoremap <leader>p :CtrlPBuffer<CR>
 
 " easymotion
 nmap , <Plug>(easymotion-prefix)
@@ -166,6 +165,8 @@ highlight LineNr ctermfg=DarkGray
 " autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$/\1/ge | endif
 
 let mapleader=" "
+
+nnoremap <leader>p :CtrlPBuffer<CR>
 
 nnoremap <C-s> :update<CR>
 inoremap <C-s> <esc>:update<CR>
