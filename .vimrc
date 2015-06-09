@@ -61,6 +61,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " ctrlp
 let g:ctrlp_tjump_only_silent = 1
+nnoremap <leader>p :CtrlPBuffer<CR>
 
 " easymotion
 nmap , <Plug>(easymotion-prefix)
