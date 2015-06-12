@@ -11,6 +11,7 @@ declare -a FILES=('.vimrc'
                   '.aliases'
                   '.tmux.conf')
 
+git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
 for FILE in "${FILES[@]}"
 do
     if [ -f $HOME/.dotfiles/$FILE -o -d $HOME/.dotfiles/$FILE ]; then
