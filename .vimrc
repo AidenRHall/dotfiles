@@ -166,6 +166,9 @@ highlight LineNr ctermfg=DarkGray
 
 let mapleader=" "
 
+nnoremap <C-j> 15j15<C-e>
+nnoremap <C-k> 15k15<C-y>
+
 nnoremap <leader>p :CtrlPBuffer<CR>
 
 nnoremap <C-s> :update<CR>
