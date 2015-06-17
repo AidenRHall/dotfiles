@@ -90,6 +90,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git mercurial repo colored-man colorize safe-paste extract web-search go ssh-agent tmux)
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=false
 
 # User configuration
 
