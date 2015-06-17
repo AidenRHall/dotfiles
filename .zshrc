@@ -88,7 +88,8 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mercurial repo colored-man colorize safe-paste extract web-search go)
+plugins=(git mercurial repo colored-man colorize safe-paste extract web-search go ssh-agent tmux)
+ZSH_TMUX_AUTOSTART=true
 
 # User configuration
 
@@ -121,4 +122,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export TERM="xterm-256color"
