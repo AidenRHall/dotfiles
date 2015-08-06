@@ -191,6 +191,8 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <leader><PageDown> :tabm +1<CR>
 nnoremap <leader><PageUp> :tabm -1<CR>
 
+nnoremap <leader>h :nohl<CR>
+
 nnoremap <A-PageDown> :tn<CR>
 nnoremap <A-PageUp> :tp<CR>
 
