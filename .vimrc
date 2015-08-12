@@ -75,6 +75,7 @@ let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 " easytags
 " !Most Important Option!
 let g:easytags_async = 1
+let g:easytags_auto_highlight = 0
 
 " airline
 if !exists('g:airline_symbols')
