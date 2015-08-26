@@ -6,6 +6,7 @@ fi
 declare -a FILES=('.vimrc'
                   '.vim'
                   '.zshrc'
+                  '.ackrc'
                   '.oh-my-zsh'
                   '.zsh_custom'
                   '.aliases'
