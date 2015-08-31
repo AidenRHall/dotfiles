@@ -39,6 +39,9 @@ Bundle 'https://github.com/tpope/vim-repeat.git'
 filetype on
 
 "" configure plugins
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
 "  syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_always_populate_loc_list = 1
@@ -55,6 +58,8 @@ let g:syntastic_warning_symbol = "⚠"
 
 "  ctags
 set tags=tags
+nnoremap <C-]> :CtrlPtjump<CR>
+vnoremap <C-]> :CtrlPtjumpVisual<CR>
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
