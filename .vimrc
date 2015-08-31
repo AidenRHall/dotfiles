@@ -130,6 +130,7 @@ au BufNewFile,BufRead *.ctp set filetype=php
 filetype plugin indent on
 set encoding=utf-8
 setglobal fileencoding=utf-8
+setlocal spell spelllang=en_us
 
 set backupdir=~/.vim/backups
 set directory=~/.vim/backups
