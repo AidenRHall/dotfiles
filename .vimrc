@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/bling/vim-airline.git'
+Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
@@ -41,15 +42,19 @@ filetype on
 
 "" configure plugins
 " supertab
+let g:SuperTabCrMapping = 1
 let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-p>"
+let g:SuperTabContextDefaultCompletionType = "<C-p>"
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>"]
+let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<C-x><C-o>"]
 autocmd FileType * 
       \if &omnifunc != '' |
-          \call SuperTabChain(&omnifunc, "<c-p>") |
-          \call SuperTabSetDefaultCompletionType("<c-x><c-o>") |
+          \call SuperTabChain(&omnifunc, "<C-p>") |
+          \call SuperTabSetDefaultCompletionType("<C-x><C-o>") |
       \endif
+" this is actually related to supertab, because it keeps opening
+" the preview window and its annoying
+set completeopt-=preview
 
 "  syntastic
 let g:syntastic_check_on_open=1
