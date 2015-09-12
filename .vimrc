@@ -42,6 +42,14 @@ filetype on
 "" configure plugins
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-p>"
+let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>"]
+autocmd FileType * 
+      \if &omnifunc != '' |
+          \call SuperTabChain(&omnifunc, "<c-p>") |
+          \call SuperTabSetDefaultCompletionType("<c-x><c-o>") |
+      \endif
 
 "  syntastic
 let g:syntastic_check_on_open=1
