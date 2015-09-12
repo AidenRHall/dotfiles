@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/bling/vim-airline.git'
-Bundle 'https://github.com/mkitt/tabline.vim.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
@@ -96,16 +95,6 @@ let g:easytags_auto_highlight = 0
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#tab_nr_type = 1 " # of splits (default)
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let g:airline#extensions#tabline#show_tab_type = 1
-let g:airline#extensions#tabline#buffer_min_count = 1
-let g:airline#extensions#tabline#tab_min_count = 1
 
 " unicode symbols
 let g:airline_left_sep = '»'
