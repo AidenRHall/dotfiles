@@ -24,19 +24,6 @@ colors
 export GOPATH=/home/aiden/Src/gocode
 export PATH=$PATH:$GOPATH/bin
 
-
-if [ -f ~/.zshrc_local ]; then
-    . ~/.zshrc_local
-fi
-
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
-
-if [ -f ~/.aliases_local ]; then
-    . ~/.aliases_local
-fi
-
 # must insert this to make tab completion not destroy spacing!
 export LC_ALL="en_US.UTF-8"
 
@@ -93,6 +80,18 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 export TERM="xterm-256color"
+
+if [ -f ~/.zshrc_local ]; then
+    . ~/.zshrc_local
+fi
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.aliases_local ]; then
+    . ~/.aliases_local
+fi
 
 # User configuration
 
