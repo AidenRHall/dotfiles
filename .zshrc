@@ -89,8 +89,10 @@ ZSH_CUSTOM=~/.zsh_custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git mercurial repo colored-man colorize safe-paste extract go ssh-agent tmux)
+ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
+export TERM="xterm-256color"
 
 # User configuration
 
@@ -122,10 +124,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export TERM="xterm-256color"
-
-# ZSH_TMUX_AUTOSTART for some reason breaks shit
-if [[ ! -n "$TMUX" ]]; then
-    _zsh_tmux_plugin_run
-    exit
-fi
