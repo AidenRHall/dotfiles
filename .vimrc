@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/bling/vim-airline.git'
-Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
@@ -162,13 +161,25 @@ com! Rm call DeleteFile()
 
 
 colorscheme solarized
-set background=dark
+set term=xterm-256color
 set t_Co=256
+set background=dark
 set hlsearch
 
 " make insert mode curor appear thin -- konsole only!
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" same thing for tmux
+if exists('$TMUX')
+      let &t_SI = "\<Esc>[3 q"
+      let &t_EI = "\<Esc>[0 q"
+      " these two lines were outside the if statement
+      " putting them here solves this issue although the cursor shape stays
+      " the same in any mode outside tmux - but that's OK.
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+endif
 
 syntax on
 au BufNewFile,BufRead *.ctp set filetype=php
