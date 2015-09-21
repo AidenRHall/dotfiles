@@ -38,4 +38,4 @@ git clone https://github.com/powerline/fonts.git
 bash fonts/install.sh
 rm -rf fonts
 
-echo 'done setting up'
+echo "done setting up. don't forget to set up the powerline symlink, and install correctly if you don't have sudo here yet"
