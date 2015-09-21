@@ -30,7 +30,6 @@ Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
 Bundle 'https://github.com/klen/python-mode.git'
 Bundle 'https://github.com/edkolev/tmuxline.vim.git'
-Bundle 'https://github.com/leafgarland/typescript-vim.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
 Bundle 'https://github.com/xolox/vim-easytags.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
@@ -91,6 +90,9 @@ omap / <Plug>(easymotion-tn)
 let g:UltiSnipsExpandTrigger="<C-n>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
+
+" language specific section
+let g:pymode_folding = 0
 
 " easytags
 " !Most Important Option!
