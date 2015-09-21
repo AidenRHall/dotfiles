@@ -93,6 +93,8 @@ let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " language specific section
 let g:pymode_folding = 0
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_ignore = "E501"
 
 " easytags
 " !Most Important Option!
