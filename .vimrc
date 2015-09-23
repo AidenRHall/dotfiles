@@ -36,6 +36,7 @@ Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'https://github.com/terryma/vim-expand-region.git'
 Bundle 'https://github.com/tpope/vim-repeat.git'
+Bundle 'https://github.com/mbbill/undotree.git'
 
 " turn filetypes back on since we're done loading plugins
 filetype on
