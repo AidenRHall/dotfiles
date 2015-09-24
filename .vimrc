@@ -96,6 +96,7 @@ let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 let g:pymode_folding = 0
 let g:pymode_lint_cwindow = 0
 let g:pymode_lint_ignore = "E501"
+let g:pymode_trim_whitespaces = 0
 
 " easytags
 " !Most Important Option!
