@@ -1,2 +1,1 @@
 --ignore-file=is:tags
---type-add 'php=.ctp'
