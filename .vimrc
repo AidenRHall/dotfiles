@@ -133,6 +133,10 @@ let g:airline_symbols.linenr = ''
 
 " undotree
 nnoremap <F7> :UndotreeToggle<CR>
+if has("persistent_undo")
+    set undodir='~/.undodir/'
+    set undofile
+endif
 
 
 " functions
