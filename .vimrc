@@ -133,6 +133,7 @@ let g:airline_symbols.linenr = ''
 
 " undotree
 nnoremap <F7> :UndotreeToggle<CR>
+let g:undotree_WindowLayout = 4
 if has("persistent_undo")
     set undodir=~/.vim/undodir
     set undofile
