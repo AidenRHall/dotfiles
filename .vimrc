@@ -7,103 +7,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 Bundle 'https://github.com/gmarik/Vundle.vim.git'
-Bundle 'https://github.com/ervandew/supertab.git'
-Bundle 'https://github.com/bling/vim-airline.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
-Bundle 'https://github.com/tpope/vim-fugitive.git'
-Bundle 'https://github.com/airblade/vim-gitgutter.git'
-Bundle 'https://github.com/scrooloose/syntastic'
-Bundle 'https://github.com/mattn/emmet-vim.git'
-Bundle 'https://github.com/tpope/vim-surround.git'
-Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
-Bundle 'https://github.com/SirVer/ultisnips.git'
-Bundle 'https://github.com/AidenRHall/vim-snippets.git'
-Bundle 'https://github.com/altercation/vim-colors-solarized.git'
-Bundle 'https://github.com/tmhedberg/matchit.git'
-Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
-Bundle 'https://github.com/junegunn/vim-easy-align.git'
-Bundle 'https://github.com/kana/vim-smartinput.git'
-Bundle 'https://github.com/tpope/vim-commentary.git'
-Bundle 'https://github.com/tpope/vim-abolish.git'
-Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
-Bundle 'https://github.com/fatih/vim-go.git'
-Bundle 'https://github.com/klen/python-mode.git'
-Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
-Bundle 'https://github.com/xolox/vim-easytags.git'
-Bundle 'https://github.com/majutsushi/tagbar.git'
-Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
-Bundle 'https://github.com/terryma/vim-expand-region.git'
-Bundle 'https://github.com/tpope/vim-repeat.git'
-Bundle 'https://github.com/mbbill/undotree.git'
 
-" turn filetypes back on since we're done loading plugins
-filetype on
+"-----------------------------------------------
 
-"" configure plugins
-" supertab
-let g:SuperTabCrMapping = 1
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<C-p>"
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<C-x><C-o>"]
-autocmd FileType * 
-      \if &omnifunc != '' |
-          \call SuperTabChain(&omnifunc, "<C-p>") |
-          \call SuperTabSetDefaultCompletionType("<C-x><C-o>") |
-      \endif
-" this is actually related to supertab, because it keeps opening
-" the preview window and its annoying
-set completeopt-=preview
-
-"  syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_highlighting = 1
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
-
-"  ctags
-set tags=tags
-nnoremap <C-]> :CtrlPtjump<CR>
-vnoremap <C-]> :CtrlPtjumpVisual<CR>
-
-" tagbar
-nmap <F8> :TagbarToggle<CR>
-
-" ctrlp
-let g:ctrlp_tjump_only_silent = 1
-
-" easymotion
-nmap , <Plug>(easymotion-prefix)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-
-" snippets
-let g:UltiSnipsExpandTrigger="<C-n>"
-let g:UltiSnipsJumpForwardTrigger="<C-n>"
-let g:UltiSnipsJumpBackwardTrigger="<C-b>"
-
-" language specific section
-let g:pymode_folding = 0
-let g:pymode_lint_cwindow = 0
-let g:pymode_lint_ignore = "E501"
-let g:pymode_trim_whitespaces = 0
-
-" easytags
-" !Most Important Option!
-let g:easytags_async = 1
-let g:easytags_auto_highlight = 0
-
-" airline
+Bundle 'https://github.com/altercation/vim-colors-solarized.git'
+Bundle 'https://github.com/bling/vim-airline.git'
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
@@ -131,13 +40,117 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-" undotree
+Bundle 'https://github.com/edkolev/tmuxline.vim.git'
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/ervandew/supertab.git'
+let g:SuperTabCrMapping = 1
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<C-p>"
+let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<C-x><C-o>"]
+autocmd FileType * 
+      \if &omnifunc != '' |
+          \call SuperTabChain(&omnifunc, "<C-p>") |
+          \call SuperTabSetDefaultCompletionType("<C-x><C-o>") |
+      \endif
+" this is actually related to supertab, because it keeps opening
+" the preview window and its annoying
+set completeopt-=preview
+
+Bundle 'https://github.com/scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_highlighting = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
+Bundle 'https://github.com/majutsushi/tagbar.git'
+nmap <F8> :TagbarToggle<CR>
+
+Bundle 'https://github.com/kana/vim-smartinput.git'
+Bundle 'https://github.com/xolox/vim-easytags.git'
+let g:easytags_async = 1
+let g:easytags_auto_highlight = 0
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
+nmap , <Plug>(easymotion-prefix)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
+set tags=tags
+nnoremap <C-]> :CtrlPtjump<CR>
+vnoremap <C-]> :CtrlPtjumpVisual<CR>
+let g:ctrlp_tjump_only_silent = 1
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
+Bundle 'https://github.com/fatih/vim-go.git'
+Bundle 'https://github.com/klen/python-mode.git'
+let g:pymode_folding = 0
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_ignore = "E501"
+let g:pymode_trim_whitespaces = 0
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/terryma/vim-expand-region.git'
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/tmhedberg/matchit.git'
+Bundle 'https://github.com/tpope/vim-abolish.git'
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/rbgrouleff/bclose.vim.git'
+Bundle 'https://github.com/mbbill/undotree.git'
 nnoremap <F7> :UndotreeToggle<CR>
 let g:undotree_WindowLayout = 4
 if has("persistent_undo")
     set undodir=~/.vim/undodir
     set undofile
 endif
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/SirVer/ultisnips.git'
+let g:UltiSnipsExpandTrigger="<C-n>"
+let g:UltiSnipsJumpForwardTrigger="<C-n>"
+let g:UltiSnipsJumpBackwardTrigger="<C-b>"
+
+Bundle 'https://github.com/AidenRHall/vim-snippets.git'
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/vim-scripts/vcscommand.vim.git'
+Bundle 'https://github.com/tpope/vim-fugitive.git'
+Bundle 'https://github.com/airblade/vim-gitgutter.git'
+
+"-----------------------------------------------
+
+Bundle 'https://github.com/mattn/emmet-vim.git'
+Bundle 'https://github.com/junegunn/vim-easy-align.git'
+Bundle 'https://github.com/tpope/vim-commentary.git'
+Bundle 'https://github.com/tpope/vim-repeat.git'
+
+
+" turn filetypes back on since we're done loading plugins
+filetype on
 
 
 " functions
