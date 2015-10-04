@@ -45,7 +45,8 @@ Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 "-----------------------------------------------
 
 Bundle 'https://github.com/ervandew/supertab.git'
-let g:SuperTabCrMapping = 1
+" would prefer for this to be 1 but it breaks smartinput
+let g:SuperTabCrMapping = 0
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<C-p>"
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
