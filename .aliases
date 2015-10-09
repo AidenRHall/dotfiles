@@ -8,5 +8,3 @@ alias tt="synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
 alias dotfiles="cd ~/.dotfiles"
 alias snippets="cd ~/.dotfiles/.vim/bundle/vim-snippets/UltiSnips/"
 alias update-vim="vim +BundleInstall +BundleClean +qall"
-
-alias ktmux="for sess in `tmux ls | grep -v attached | cut -d: -f1 | grep '[0-9]'`; do tmux kill-session -t $sess; done"

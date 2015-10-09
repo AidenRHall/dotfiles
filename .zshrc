@@ -75,6 +75,11 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+function ktmux {
+    for sess in `tmux ls | grep -v attached | cut -d: -f1 | grep '[0-9]'`; do tmux kill-session -t $sess; done
+}
+
 plugins=(git mercurial repo colored-man colorize safe-paste extract go ssh-agent tmux)
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
