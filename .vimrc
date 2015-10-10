@@ -40,6 +40,9 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+Bundle 'https://github.com/jpalardy/vim-slime.git'
+let g:slime_target = "tmux"
+
 Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 
 "-----------------------------------------------
