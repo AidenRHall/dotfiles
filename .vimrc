@@ -103,6 +103,9 @@ let g:ctrlp_tjump_only_silent = 1
 
 Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
+Bundle 'https://github.com/lukerandall/haskellmode-vim.git'
+let g:haddock_browser = "/usr/bin/google-chrome-stable"
+
 Bundle 'https://github.com/klen/python-mode.git'
 let g:pymode_folding = 0
 let g:pymode_lint_cwindow = 0

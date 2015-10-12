@@ -2,5 +2,6 @@
 .vim/backups
 .vim/bundle/
 .vim/.netrwhist
+.vim/haskellmode.config
 .oh-my-zsh
 .powerline
