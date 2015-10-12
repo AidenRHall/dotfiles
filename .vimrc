@@ -241,6 +241,9 @@ set ruler
 set showcmd
 set incsearch
 
+set showmatch
+set matchtime=5
+
 set autoindent
 
 set tabpagemax=15
@@ -305,8 +308,6 @@ nnoremap g] :CtrlPtjump<CR>
 inoremap <C-d> <esc>A<CR>
 inoremap <C-j> <esc>A;<CR>
 inoremap <C-e> <esc>A;<esc>
-
-inoremap <C-a> <esc>mtvip:EasyAlign =<CR>'ta
 
 nnoremap g] :CtrlPtjumpVisual<CR>
 vnoremap <leader>s :sort<CR>
