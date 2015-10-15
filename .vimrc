@@ -112,6 +112,12 @@ let g:pymode_lint_cwindow = 0
 let g:pymode_lint_ignore = "E501"
 let g:pymode_trim_whitespaces = 0
 
+Bundle 'https://github.com/tobyS/pdv.git'
+Bundle 'https://github.com/brookhong/DBGPavim.git'
+Bundle 'https://github.com/shawncplus/phpcomplete.vim.git'
+let php_sql_query=1
+let php_htmlInStrings=1
+
 "-----------------------------------------------
 
 Bundle 'https://github.com/tpope/vim-surround.git'
