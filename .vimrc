@@ -40,9 +40,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-Bundle 'https://github.com/jpalardy/vim-slime.git'
-let g:slime_target = "tmux"
-
 Bundle 'https://github.com/edkolev/tmuxline.vim.git'
 
 "-----------------------------------------------
@@ -53,7 +50,7 @@ let g:SuperTabCrMapping = 0
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<C-p>"
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<C-x><C-o>"]
+let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<C-x><C-o>"]
 autocmd FileType * 
       \if &omnifunc != '' |
           \call SuperTabChain(&omnifunc, "<C-p>") |
