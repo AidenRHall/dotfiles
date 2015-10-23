@@ -143,6 +143,7 @@ Bundle 'https://github.com/SirVer/ultisnips.git'
 let g:UltiSnipsExpandTrigger="<C-n>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
+let g:snips_author="Aiden Hall"
 
 Bundle 'https://github.com/AidenRHall/vim-snippets.git'
 
