@@ -85,6 +85,8 @@ let g:easytags_auto_highlight = 0
 "-----------------------------------------------
 
 Bundle 'https://github.com/kien/ctrlp.vim.git'
+let g:ctrlp_extensions = ['tab', 'buffertag', 'mixed', 'undo', 'quickfix']
+
 Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
 nmap , <Plug>(easymotion-prefix)
 map  / <Plug>(easymotion-sn)
