@@ -115,7 +115,6 @@ Bundle 'https://github.com/marijnh/tern_for_vim.git'
 Bundle 'https://github.com/tobyS/pdv.git'
 Bundle 'https://github.com/brookhong/DBGPavim.git'
 Bundle 'https://github.com/shawncplus/phpcomplete.vim.git'
-let php_sql_query=1
 let php_htmlInStrings=1
 
 "-----------------------------------------------
