@@ -1,7 +1,10 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="blue"; fi
 
+_prompt_and_resched() { sched +1 _prompt_and_resched; zle && zle reset-prompt }
+_prompt_and_resched
+
 PROMPT='%{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%} %{$fg[green]%}☘%{$reset_color%} %{$fg[yellow]%}%c%{$reset_color%} $(hg_prompt_info)$(git_prompt_info)%(!.#.») '
-RPROMPT='[%*]'
+RPROMPT='%D{%H:%M:%S}'
 
 # universal vcs prompt info
 ZSH_THEME_VCS_PROMPT_PREFIX="%{$fg_bold[blue]%}[%{$fg_no_bold[white]%}%B"
