@@ -86,6 +86,8 @@ let g:easytags_auto_highlight = 0
 
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 let g:ctrlp_extensions = ['tab', 'buffertag', 'mixed', 'undo', 'quickfix']
+nnoremap <C-f> :CtrlPBufTag<CR>
+nnoremap <A-p> :CtrlPBuffer<CR>
 
 Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
 nmap , <Plug>(easymotion-prefix)
@@ -270,8 +272,6 @@ let mapleader=" "
 
 nnoremap <C-j> 15j15<C-e>
 nnoremap <C-k> 15k15<C-y>
-
-nnoremap <leader>p :CtrlPBuffer<CR>
 
 nnoremap <C-s> :update<CR>
 inoremap <C-s> <esc>:update<CR>
