@@ -159,6 +159,7 @@ Bundle 'https://github.com/airblade/vim-gitgutter.git'
 "-----------------------------------------------
 
 Bundle 'https://github.com/mattn/emmet-vim.git'
+Bundle 'https://github.com/AndrewRadev/splitjoin.vim.git'
 Bundle 'https://github.com/junegunn/vim-easy-align.git'
 Bundle 'https://github.com/tpope/vim-commentary.git'
 Bundle 'https://github.com/tpope/vim-repeat.git'
