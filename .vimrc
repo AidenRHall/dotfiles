@@ -79,12 +79,13 @@ nmap <F8> :TagbarToggle<CR>
 
 Bundle 'https://github.com/kana/vim-smartinput.git'
 Bundle 'https://github.com/xolox/vim-easytags.git'
+set tags=tags
 let g:easytags_async = 1
 let g:easytags_auto_highlight = 0
 
 "-----------------------------------------------
 
-Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/ctrlpvim/ctrlp.vim'
 let g:ctrlp_extensions = ['tab', 'buffertag', 'mixed', 'undo', 'quickfix']
 nnoremap <C-f> :CtrlPBufTag<CR>
 nnoremap <A-p> :CtrlPBuffer<CR>
@@ -95,7 +96,6 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
 Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
-set tags=tags
 nnoremap <C-]> :CtrlPtjump<CR>
 vnoremap <C-]> :CtrlPtjumpVisual<CR>
 let g:ctrlp_tjump_only_silent = 1
