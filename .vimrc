@@ -13,6 +13,7 @@ Bundle 'https://github.com/xolox/vim-misc.git'
 
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 Bundle 'https://github.com/bling/vim-airline.git'
+Bundle 'https://github.com/vim-airline/vim-airline-themes.git'
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
