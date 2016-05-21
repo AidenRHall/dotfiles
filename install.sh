@@ -31,6 +31,10 @@ done
 mkdir $HOME/.vim/backups
 mkdir $HOME/.vim/undodir
 
+if [ ! -f $HOME/.tmux_local.conf ]; then
+    touch ~/.tmux_local.conf
+fi
+
 mkdir $HOME/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim .vim/bundle/Vundle.vim
 vim +BundleInstall +qall

@@ -113,6 +113,7 @@ let g:pymode_folding = 0
 let g:pymode_lint_cwindow = 0
 let g:pymode_lint_ignore = "E501"
 let g:pymode_trim_whitespaces = 0
+let g:pymode_rope = 0
 
 Bundle 'https://github.com/marijnh/tern_for_vim.git'
 Bundle 'https://github.com/shawncplus/phpcomplete.vim.git'
