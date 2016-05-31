@@ -100,6 +100,7 @@ Bundle 'https://github.com/ivalkeen/vim-ctrlp-tjump.git'
 nnoremap <C-]> :CtrlPtjump<CR>
 vnoremap <C-]> :CtrlPtjumpVisual<CR>
 let g:ctrlp_tjump_only_silent = 1
+let g:ctrlp_custom_ignore = 'node_modules'
 
 "-----------------------------------------------
 
