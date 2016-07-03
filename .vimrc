@@ -146,8 +146,8 @@ Bundle 'https://github.com/beloglazov/vim-online-thesaurus.git'
 "-----------------------------------------------
 
 Bundle 'https://github.com/SirVer/ultisnips.git'
-let g:UltiSnipsExpandTrigger="<C-n>"
-let g:UltiSnipsJumpForwardTrigger="<C-n>"
+let g:UltiSnipsExpandTrigger="<C-f>"
+let g:UltiSnipsJumpForwardTrigger="<C-f>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 let g:snips_author="Aiden Hall"
 
