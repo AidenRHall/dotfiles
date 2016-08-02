@@ -41,6 +41,8 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+Bundle 'https://github.com/mileszs/ack.vim.git'
+
 "-----------------------------------------------
 
 Bundle 'https://github.com/ervandew/supertab.git'
