@@ -91,6 +91,8 @@ let g:ctrlp_extensions = ['tab', 'buffertag', 'mixed', 'undo', 'quickfix']
 nnoremap <C-f> :CtrlPBufTag<CR>
 nnoremap <A-p> :CtrlPBuffer<CR>
 
+Bundle 'https://github.com/terryma/vim-multiple-cursors.git'
+
 Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
 nmap , <Plug>(easymotion-prefix)
 map  / <Plug>(easymotion-sn)
