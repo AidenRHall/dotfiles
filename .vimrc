@@ -122,8 +122,6 @@ let g:pymode_trim_whitespaces = 0
 let g:pymode_rope = 0
 
 Bundle 'https://github.com/marijnh/tern_for_vim.git'
-Bundle 'https://github.com/shawncplus/phpcomplete.vim.git'
-let php_htmlInStrings=1
 
 "-----------------------------------------------
 
@@ -235,7 +233,6 @@ if exists('$TMUX')
 endif
 
 syntax on
-au BufNewFile,BufRead *.ctp set filetype=php
 filetype plugin indent on
 set encoding=utf-8
 setglobal fileencoding=utf-8
