@@ -5,3 +5,6 @@ alias lla="ls -la"
 alias dotfiles="cd ~/.dotfiles"
 alias snippets="cd ~/.dotfiles/.vim/bundle/vim-snippets/UltiSnips/"
 alias update-vim="vim +BundleInstall +BundleClean +qall"
+
+alias ta='tmux attach -t'
+alias tn='tmux new -s'
