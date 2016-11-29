@@ -110,8 +110,8 @@ Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
 Bundle 'https://github.com/let-def/vimbufsync.git'
 Bundle 'https://github.com/the-lambda-church/coquille.git'
-nnoremap gm :CoqToCursor
-nnoremap gn :CoqNext
+nnoremap gm :CoqToCursor<CR>
+nnoremap gn :CoqNext<CR>
 
 Bundle 'https://github.com/lukerandall/haskellmode-vim.git'
 let g:haddock_browser = "/usr/bin/google-chrome-stable"
