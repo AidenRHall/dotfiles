@@ -108,6 +108,11 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'https://github.com/fatih/vim-go.git'
+Bundle 'https://github.com/let-def/vimbufsync.git'
+Bundle 'https://github.com/the-lambda-church/coquille.git'
+nnoremap gm :CoqToCursor
+nnoremap gn :CoqNext
+
 Bundle 'https://github.com/lukerandall/haskellmode-vim.git'
 let g:haddock_browser = "/usr/bin/google-chrome-stable"
 
