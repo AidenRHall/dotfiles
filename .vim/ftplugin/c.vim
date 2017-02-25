@@ -5,3 +5,4 @@ setlocal softtabstop=0
 setlocal tabstop=8
 
 inoremap <C-j> <esc>A;<CR>
+set wildignore+=*.o,*.out
