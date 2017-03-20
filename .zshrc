@@ -80,7 +80,7 @@ function ktmux {
     for sess in `tmux ls | grep -v attached | cut -d: -f1 | grep '[0-9]'`; do tmux kill-session -t $sess; done
 }
 
-plugins=(git mercurial repo colored-man colorize safe-paste extract go ssh-agent)
+plugins=(git mercurial repo colored-man colorize safe-paste extract go ssh-agent zsh-syntax-highlighting)
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false

@@ -5,3 +5,4 @@
 .vim/haskellmode.config
 .oh-my-zsh
 .powerline
+.zsh_custom/plugins/zsh-syntax-highlighting
