@@ -76,7 +76,6 @@ set statusline+=%*
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
-Bundle 'https://github.com/google/vim-coverage.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 nmap <F8> :TagbarToggle<CR>
 
