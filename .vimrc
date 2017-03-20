@@ -117,6 +117,7 @@ nnoremap gn :CoqNext<CR>
 
 Bundle 'https://github.com/lukerandall/haskellmode-vim.git'
 let g:haddock_browser = "/usr/bin/google-chrome-stable"
+au BufNewFile,BufRead *.hs set filetype=haskell
 
 Bundle 'https://github.com/mpickering/hlint-refactor-vim.git'
 let g:hlintRefactor#disableDefaultKeybindings = 1
