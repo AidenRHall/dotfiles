@@ -3,6 +3,11 @@ if [ ! -d $HOME/.dotfiles ]; then
     exit 1
 fi
 
+if [ $PWD != $HOME/.dotfiles ]; then
+    echo "exiting: $HOME/.dotfiles is not the pwd"
+    exit 1
+fi
+
 declare -a FILES=('.vimrc'
                   '.vim'
                   '.zshrc'
@@ -13,9 +18,10 @@ declare -a FILES=('.vimrc'
                   '.powerline'
                   '.tmux.conf')
 
-mkdir $HOME/.vim/backups
-mkdir $HOME/.vim/undodir
-mkdir $HOME/.vim/bundle
+mkdir $HOME/.dotfiles/.zsh_custom/plugins
+mkdir $HOME/.dotfiles/.vim/backups
+mkdir $HOME/.dotfiles/.vim/undodir
+mkdir $HOME/.dotfiles/.vim/bundle
 
 git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting .zsh_custom/plugins/zsh-syntax-highlighting
