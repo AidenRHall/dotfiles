@@ -1,8 +1,4 @@
 .vim/undodir
 .vim/backups
-.vim/bundle/
-.vim/.netrwhist
-.vim/haskellmode.config
-.oh-my-zsh
-.powerline
-.zsh_custom/plugins/zsh-syntax-highlighting
+.vim/syntax
+.vim/ftdetect
